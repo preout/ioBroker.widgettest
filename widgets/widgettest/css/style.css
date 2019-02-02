@@ -3,7 +3,7 @@
     font-style: italic;
 }
 
-.badge-one {
+.badge_one {
 position: absolute;
     bottom: 0px;
     right: 40px;
@@ -18,7 +18,7 @@ position: absolute;
     font-size: 10pt;
 }
 
-.badge-two {
+.badge_two {
 position: absolute;
     bottom: 0px;
     right: 3px;
@@ -33,7 +33,7 @@ position: absolute;
     font-size: 10pt;
 }
 
-.middle-pipe {
+.middle_pipe {
     position: absolute;
     bottom: 0px;
     right: 3px;
