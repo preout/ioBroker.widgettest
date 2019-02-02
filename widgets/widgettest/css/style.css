@@ -3,37 +3,6 @@
     font-style: italic;
 }
 
-.badge_one {
-position: absolute;
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
-  width: 19px;
-  height: 19px;
-  text-align: center;
-  color: #ffffff;
-  padding: 5px;
-  margin: 0;
-  vertical-align: middle !important;
-  display: block;
-  font-size: 10pt;
-}
-
-.badge_two {
-    position: absolute;
-    bottom: 114px;
-    right: 0px;
-    width: 14px;
-    height: 14px;
-    text-align: center;
-    color: #ffffff;
-    padding: 5px;
-    margin: 0;
-    vertical-align: middle !important;
-    display: block;
-    font-size: 8pt;
-}
-
 
 .metro .tile .brand .badge_one,
 .metro .tile .tile-status .badge_one {
@@ -99,18 +68,18 @@ position: absolute;
 
 .metro .tile .brand .badge_two,
 .metro .tile .tile-status .badge_two {
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
-  width: 19px;
-  height: 19px;
-  text-align: center;
-  color: #ffffff;
-  padding: 5px;
-  margin: 0;
-  vertical-align: middle !important;
-  display: block;
-  font-size: 10pt;
+    position: absolute;
+    bottom: 114px;
+    right: 0px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    margin: 0;
+    vertical-align: middle !important;
+    display: block;
+    font-size: 8pt;
 }
 .metro .tile .brand .badge_two.activity,
 .metro .tile .tile-status .badge_two.activity {
