@@ -143,6 +143,7 @@
         data-vis-attrs1="group.badge;label;badge_bg_class[]/style,metro-,bg-;brand_bg_class[ribbed-steel]/style,metro-,bg- ribbed-;"
         data-vis-attrs2="group.dialog;dialog_fontSize[12px];dialog_padding[0px 0px 0px 0px];dialog_textAlign;dialog_width;dialog_height;dialog_title;dialog_flat/checkbox;dialog_shadow/checkbox;dialog_draggable[true]/checkbox;dialog_modal/checkbox;dialog_icon_src/image;dialog_icon_class[]/style,iconFont,icon-,,Icon ;"
         data-vis-set="widgettest"
+        data-vis-update-style="true"
         data-vis-type="val,dialog"
         data-vis-name="Tile Dialog / Two Badge Numbers">
     <div id="<%= this.data.attr('wid') %>" class="vis-widget" style="width: 136px; height: 136px; padding: 3px;">
@@ -153,28 +154,34 @@
                     <i class="<%= this.data.attr("icon_class") %>"></i>
                     <%== this.data.attr('content_oid') ? vis.states.attr(this.data.content_oid + '.val') : '' %>
                 </div>
+
+
+
+
+
+        <% %> - execute javascript
+        <%= %> - place escaped result to HTML document
+        <%== %> - place unescaped result to HTML document
+
+
+
+
+
                 <div class="brand <%= this.data.attr("brand_bg_class") %>">
                      <span class="label fg-white"><%= this.data.attr("label") %></span>
                 <div  style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge_one <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.number_oid + '.val') %></div>
-                <span style="<%
 
-                var valueOne = vis.states.attr(this.data.number_oid + '.val');
-                var valueTwo = vis.states.attr(this.data.numbertwo_oid + '.val');
+                <%
+                    var valueOne = vis.states.attr(this.data.number_oid + '.val');
+                    var valueTwo = vis.states.attr(this.data.numbertwo_oid + '.val');
+                    var style = '';
 
+                    if( valueOne > 0 && valueTwo > 0 ) {
+                        style = "display:none;"
+                    }
+                 %>
 
-                if( valueOne > 0 && valueTwo > 0 ) {
-
-                    %>
-                    "display:none;"
-                    <%
-
-                } else {
-                    %>
-                    ""
-                    <%
-                }
-
-                %> class="middle_pipe">|</span>
+                <span style="<%== style %>" class="middle_pipe">|</span>
                 <div  style="<%= vis.states.attr(this.data.numbertwo_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge_two <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.numbertwo_oid + '.val') %></div>
             </div>
         </div>
