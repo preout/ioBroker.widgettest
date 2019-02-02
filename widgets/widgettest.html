@@ -156,7 +156,7 @@
                 <div class="brand <%= this.data.attr("brand_bg_class") %>">
                     <span class="label fg-white"><%= this.data.attr("label") %></span>
                 <div style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge-one <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.number_oid + '.val') %></div>
-                <span style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 && vis.states.attr(this.data.numbertwo_oid + '.val') > 0  ? '' : 'display:none;' class="middle-pipe">|</span>
+                <span style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 && vis.states.attr(this.data.numbertwo_oid + '.val') > 0  ? '' : 'display:none;' %> class="middle-pipe">|</span>
                 <div style="<%= vis.states.attr(this.data.numbertwo_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge-two <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.numbertwo_oid + '.val') %></div>
             </div>
         </div>
