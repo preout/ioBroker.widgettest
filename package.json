@@ -1,0 +1,33 @@
+{
+  "name": "iobroker.widgettest",
+  "version": "0.0.1",
+  "description": "widgettest",
+  "author": {
+    "name": "alex",
+    "email": "a@a.de"
+  },
+  "homepage": "https://github.com/alex/ioBroker.widgettest",
+  "license": "Unlicense",
+  "keywords": [
+    "ioBroker",
+    "template",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex/ioBroker.widgettest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/gulp": "^4.0.5",
+    "axios": "^0.18.0",
+    "gulp": "^4.0.0"
+  },
+  "main": "widgets/widgettest.html",
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/alex/ioBroker.widgettest/issues"
+  },
+  "readmeFilename": "README.md"
+}
