@@ -154,10 +154,28 @@
                     <%== this.data.attr('content_oid') ? vis.states.attr(this.data.content_oid + '.val') : '' %>
                 </div>
                 <div class="brand <%= this.data.attr("brand_bg_class") %>">
-                    <span class="label fg-white"><%= this.data.attr("label") %></span>
-                <div style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge-one <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.number_oid + '.val') %></div>
-                <span style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 && vis.states.attr(this.data.numbertwo_oid + '.val') > 0  ? '' : 'display:none;' %> class="middle-pipe">|</span>
-                <div style="<%= vis.states.attr(this.data.numbertwo_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge-two <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.numbertwo_oid + '.val') %></div>
+                     <spanclass="label fg-white"><%= this.data.attr("label") %></span>
+                <div  style="<%= vis.states.attr(this.data.number_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge_one <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.number_oid + '.val') %></div>
+                <span style="
+
+
+                <%
+
+                var valueOne = vis.states.attr(this.data.number_oid + '.val');
+                var valueTwo = vis.states.attr(this.data.numbertwo_oid + '.val');
+
+
+                if (valueOne > 0 && valueTwo > 0) { %>
+                    'display:none;';
+                    <% }
+                    else {
+                        %>
+                    '';
+                    <%
+                    }
+
+                %> class="middle_pipe">|</span>
+                <div  style="<%= vis.states.attr(this.data.numbertwo_oid + '.val') > 0 ? '' : 'display:none;' %>" class="badge_two <%= this.data.attr("badge_bg_class") %>"><%= vis.states.attr(this.data.numbertwo_oid + '.val') %></div>
             </div>
         </div>
 
